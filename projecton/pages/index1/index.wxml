@@ -1,0 +1,12 @@
+<view class='logo'>
+<view class='wang'>hua.com</view>
+<view class='forwer'>元子戎</view>
+</view>
+<view class='center'>
+<view class='center_top'>全世界的</view>
+<view class='center_middle'>小花粉</view>
+<view class='center_bottom'>与你一起，分享美好生活</view>
+</view>
+
+
+<view class='footer' bindtap='footer'>加入我们</view>
