@@ -1,0 +1,94 @@
+<!--pages/project6/project6.wxml-->
+<view class='head'>
+  <image class='head-bg' src='{{headbg}}'></image>
+  <view class='loading'>Hi,欢迎来到花礼网
+    <!-- <button class='btn'>登录/注册</button> -->
+  </view>
+</view>
+<view class='box'>
+  <view class='order'>
+    <view class='order-one'>
+      <view>我的花</view>
+      <view>全部花></view>
+    </view>
+    <view class='order-two'>
+      <view class='shop'>
+        <image class='icon' src='/images/11.jpg'></image>
+        <view>待付款</view>
+      </view>
+      <view class='shop'>
+        <image class='icon' src='/images/22.jpg'></image>
+        <view>今日配送</view>
+      </view>
+      <view class='shop'>
+        <image class='icon' src='/images/33.jpg'></image>
+        <view>待评价</view>
+      </view>
+    </view>
+  </view>
+   <view class='ord'>
+   
+    <view class='order-tw'>
+      <view class='shop'>
+        <image class='ic on' src='/images/kaquanguanli.png'></image>
+        <view>待付款</view>
+      </view>
+      <view class='shop'>
+        <image class='ic on' src='/images/qiandaohuodong.png'></image>
+        <view>今日配送</view>
+      </view>
+      <view class='shop '>
+        <image class='ic on' src='/images/qian.png'></image>
+        <view>待评价</view>
+      </view>
+      <view class='shop '>
+        <image class='ic on' src='/images/huiyuanquanyi.png'></image>
+        <view>待评价</view>
+      </view>
+      <view class='shop '>
+        <image class='ic on' src='/images/dakaguanli.png'></image>
+        <view>待评价</view>
+      </view>
+      <view class='shop '>
+        <image class='ic on' src='/images/gongzhonghaopeizhi.png'></image>
+        <view>待评价</view>
+      </view>
+      <view class='shop '>
+        <image class='ic on' src='/images/yingxiaocehua.png'></image>
+        <view>待评价</view>
+      </view>
+      <view class='shop '>
+        <image class='ic on' src=''></image>
+        <view></view>
+      </view>
+    </view>
+  </view>
+  <view></view>
+  <view></view>
+</view>
+
+<view class='footer'>
+    <view class='foot-dl' bindtap='home'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/1.jpg'></image></view>
+        <view class='foot-dd'>首页</view>
+    </view>
+    <view class='foot-dl' bindtap='fenlei'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/3.jpg'></image></view>
+        <view class='foot-dd'>分类</view>
+    </view>
+    <view class='foot-dl' bindtap='diy'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/diy.png'></image></view>
+        <view class='foot-dd'>DIY</view>
+    </view>
+    <view class='foot-dl' bindtap='user'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/8.jpg'></image></view>
+        <view class='foot-dd'>我的</view>
+    </view>
+</view>
+
+
+

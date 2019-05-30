@@ -1,0 +1,117 @@
+/* pages/project6/project6.wxss */
+page{
+  background: #E9ECF0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.head{
+  width: 100%;
+  height: 260rpx;
+ position: relative;
+}
+.head-bg{
+  width: 100%;
+  height: 260rpx;
+}
+.loading{
+  position: absolute;
+  left:32%;
+  top:30%;
+  color: #fff;
+  font-size: 35rpx;
+}
+.btn{
+  height: 75rpx;
+  line-height:70rpx;
+  font-size: 30rpx;
+  margin:12rpx;
+  border-radius: 30rpx;
+}
+.box{
+  width: 94%;
+  flex:1;
+  /* background: #fff; */
+  margin:-5% 3% 3% 3%;
+  z-index: 999;
+}
+.order{
+  background: #fff;
+  width: 100%;
+  height: 230rpx;
+  border-radius: 10rpx;
+   padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.ord{
+  background: #fff;
+  width: 100%;
+  height: 300rpx;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.order-one{
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 31rpx;
+  border-bottom: 1rpx solid #eee;
+ 
+}
+.order-two{
+  display:flex;
+  margin-top:20rpx;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.order-tw{
+  display:flex;
+  margin-top:20rpx;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  line-height: 60rpx;
+}
+.icon{
+  width: 75rpx;
+  height:70rpx;
+}
+.ic{
+  width: 40rpx;
+  height:40rpx;
+  font-size:2rpx;
+}
+.shop{
+  width: 25%;
+  font-size:26rpx;
+  text-align: center;
+  color: #666;
+}
+
+.footer{
+  width: 100%;
+  height:100rpx;
+  background: #F7F9FA;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position:fixed;
+  bottom: 0;
+  left:0;
+  color: #555;
+}
+.img{
+  width: 50rpx;
+  height: 45rpx;
+}
+.foot-dd{
+  font-size: 30rpx;
+}
+.on{
+  margin-top:10%;
+}

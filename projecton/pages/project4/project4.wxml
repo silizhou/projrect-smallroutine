@@ -1,0 +1,19 @@
+<!--pages/project4/project4.wxml-->
+<view class='xiao'>
+<view class='active'>综合</view>
+<view>销量</view>
+<view>价格</view>
+<view>新品</view>
+</view>
+<view class='xiao'>
+<view class='song' >送女友</view>
+<view class='song'>送男友</view>
+<view class='song'>送朋友</view>
+<view class='song'>送长辈</view>
+</view>
+<view class='wrap'>
+<view class='shopping' wx:for='{{FlowerList}}' wx:key='index' bindtap='click'>
+<image class='img' src='{{item.Image}}'></image>
+<view>{{item.Name}}</view>
+</view>
+</view>

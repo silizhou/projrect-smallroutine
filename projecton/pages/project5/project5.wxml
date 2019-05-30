@@ -1,0 +1,69 @@
+<!--pages/project5/project5.wxml-->
+<view class='box'>
+  <view class='classify'>
+    <view class='detail'>{{Subject}}</view>
+  </view>
+
+  <!-- <view class='xinxi'>
+    <view class='class' wx:for='{{one}}' wx:key='index'>
+      <image class='icon' src='{{item.Icon}}'></image>
+      <view>{{item.Label}}</view>
+    </view>
+  </view> -->
+
+<view>花材</view>
+  <view class='xinxi'>
+    <view class='class' wx:for='{{two}}' wx:key='index'>
+      <image class='icon' src='{{item.Icon}}'></image>
+      <view>{{item.Label}}</view>
+    </view>
+  </view>
+  
+  <view>类别</view>
+  <view class='xinxi'>
+    <view class='class' wx:for='{{three}}' wx:key='index'>
+      <image class='icon' src='{{item.Icon}}'></image>
+      <view>{{item.Label}}</view>
+    </view>
+  </view>
+
+<view>颜色</view>
+  <view class='xinxi'>
+    <view class='class' wx:for='{{four}}' wx:key='index'>
+      <image class='icon' src='{{item.Icon}}'></image>
+      <view>{{item.Label}}</view>
+    </view>
+  </view>
+<view>支数</view>
+  <view class='xinxi'>
+    <view class='class' wx:for='{{five}}' wx:key='index'>
+      <image class='icon' src='{{item.Icon}}'></image>
+      <view>{{item.Label}}</view>
+    </view>
+  </view>
+
+</view>
+
+<view class='footer'>
+    <view class='foot-dl' bindtap='home'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/1.jpg'></image></view>
+        <view class='foot-dd'>首页</view>
+    </view>
+    <view class='foot-dl' bindtap='fenlei'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/3.jpg'></image></view>
+        <view class='foot-dd'>分类</view>
+    </view>
+    <view class='foot-dl' bindtap='diy'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/diy.png'></image></view>
+        <view class='foot-dd'>DIY</view>
+    </view>
+    <view class='foot-dl' bindtap='user'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/8.jpg'></image></view>
+        <view class='foot-dd'>我的</view>
+    </view>
+</view>
+

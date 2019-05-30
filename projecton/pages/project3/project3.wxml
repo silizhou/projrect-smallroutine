@@ -1,0 +1,50 @@
+<!--pages/project3/project3.wxml-->
+<view class='inp'>
+  <image class='icon1' src='/images/xiangzuo.png'></image>
+  <view class='search'>
+    <image class='icon2' src='/images/Group-.png'></image>
+    <input placeholder='请输入关键字'></input>
+  </view>
+
+</view>
+
+
+<view class='wrap'>
+  <view class='left'>
+    <view  wx:for='{{Subjects}}' wx:key='index'  class='{{flag?"normal":"select"}}' bindtap='tabChange' data-show='1'>
+      {{item.Subject}}
+    </view>
+    <view  wx:for='{{Subjects}}' wx:key='index'  class='{{flag?"normal":"select"}}' bindtap='tabChange' data-show='2'>
+      {{item.Subject}}
+    </view>
+  </view>
+
+
+  <view class='right'>
+   
+  </view>
+</view>
+
+<view class='footer'>
+    <view class='foot-dl' bindtap='home'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/1.jpg'></image></view>
+        <view class='foot-dd'>首页</view>
+    </view>
+    <view class='foot-dl' bindtap='fenlei'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/3.jpg'></image></view>
+        <view class='foot-dd'>分类</view>
+    </view>
+    <view class='foot-dl' bindtap='diy'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/diy.png'></image></view>
+        <view class='foot-dd'>DIY</view>
+    </view>
+    <view class='foot-dl' bindtap='user'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/8.jpg'></image></view>
+        <view class='foot-dd'>我的</view>
+    </view>
+</view>
+

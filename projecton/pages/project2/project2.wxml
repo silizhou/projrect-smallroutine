@@ -1,0 +1,67 @@
+<!--pages/project2/project2.wxml-->
+<view class='wrap'>
+<swiper class='bann' indicator-dots="{{indicatorDots}}" indicator-dots='true'autoplay="true" interval="2000" duration="500" circular='true'>
+  <block wx:for="{{imgUrls}}" wx:key='index'>
+    <swiper-item class='banner' bindtap='banner'>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='lo'>
+  <view class='qi'>
+    <image class='dui' src='/images/dui.png'></image>
+    <view></view>认证龙头企</view>
+  <view class='qi'>
+    <image class='dui' src='/images/dui.png'></image>
+    <view></view>14年品</view>
+  <view class='qi'>
+    <image class='dui' src='/images/dui.png'></image>
+    <view></view>3小时送</view>
+  <view class='qi'>
+    <image class='dui' src='/images/dui.png'></image>
+    <view></view>最近31675条</view>
+</view>
+
+<view class='nav'>
+  <view class='dl' wx:for='{{nav}}' wx:key='index' bindtap='flower'>
+    <image class='dd' src='{{item.list}}'></image>
+    <view class='dt'>{{item.id}}</view>
+  </view>
+</view>
+
+<image class='newUser' src='{{newUser}}'></image>
+
+<view class='select'><view class='sele'>一秒选花</view></view>
+
+
+<view class='song'>
+<view class='song-item' wx:for='{{song}}' wx:key='index'>
+   <image class='song-img' src='{{item.list}}'></image>
+    <view class='song-context'>{{item.id}}</view>
+</view>
+</view>
+</view>
+<view class='footer'>
+    <view class='foot-dl' bindtap='home'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/1.jpg'></image></view>
+        <view class='foot-dd'>首页</view>
+    </view>
+    <view class='foot-dl' bindtap='fenlei'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/3.jpg'></image></view>
+        <view class='foot-dd'>分类</view>
+    </view>
+    <view class='foot-dl' bindtap='diy'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/diy.png'></image></view>
+        <view class='foot-dd'>DIY</view>
+    </view>
+    <view class='foot-dl' bindtap='user'>      
+        <view class='foot-dt'><image class='img'
+        src='/images/8.jpg'></image></view>
+        <view class='foot-dd'>我的</view>
+    </view>
+</view>
+
