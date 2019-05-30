@@ -49,13 +49,17 @@ border-right:1rpx solid #eee;
 .right{
 height: 100%;
 flex: 1;
-background: #ccf;
+/* background: #ccf; */
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+text-align: center;
 }
 .list-nav{
   height: 100rpx;
   line-height: 100rpx;
   text-align: center;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1rpx solid #eee;
   font-size: 33rpx;
   color: #6C6D6E;
 }
@@ -86,4 +90,16 @@ background: #ccf;
 }
 .normal{
   color: #ccf;
+}
+
+
+.ri{
+width: 28%;
+font-size:30rpx;
+margin: 10rpx;
+margin-top:38rpx;
+}
+.im{
+  width: 80rpx;
+  height: 80rpx;
 }

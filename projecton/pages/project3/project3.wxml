@@ -11,17 +11,21 @@
 
 <view class='wrap'>
   <view class='left'>
-    <view  wx:for='{{Subjects}}' wx:key='index'  class='{{flag?"normal":"select"}}' bindtap='tabChange' data-show='1'>
+    <!-- <view  wx:for='{{Subjects}}' wx:key='index'  class='{{flag?"normal":"select"}}' bindtap='tabChange' data-show='{{true}}'>
       {{item.Subject}}
-    </view>
-    <view  wx:for='{{Subjects}}' wx:key='index'  class='{{flag?"normal":"select"}}' bindtap='tabChange' data-show='2'>
+    </view> -->
+    <view  class='list-nav' wx:for='{{Subjects}}' wx:key='index' bindtap='tabChange' data-show='{{item.id}}'>
       {{item.Subject}}
+     
     </view>
   </view>
 
 
-  <view class='right'>
-   
+  <view class='right' >
+  <view class='ri' wx:for='{{one}}' wx:key='index'>
+  <image class='im' src='{{item.Icon}}'></image>
+  <view class=''> {{item.Label}}</view>
+  </view>
   </view>
 </view>
 

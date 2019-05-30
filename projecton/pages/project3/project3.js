@@ -7,23 +7,32 @@ Page({
   data: {
     Subjects:[],
     one:[],
-    flag:true
+    flag:true,
+    tar:false,
+    id:[]
   },
-  tabChange(event) {
-    console.log(event.target.dataset)
-    let { show } = event.target.dataset
-    if (show === "1") {
-      this.setData({
-        flag: false
-      })
-
-    } else {
-      this.setData({
-        flag: true
-      })
-
-    }
+  tabChange(e) {
+    console.log(e.currentTarget.dataset.show)
+    
+    this.setData({
+      id: e.currentTarget.dataset.show
+    })
   },
+  // tabChange(event) {
+  //   console.log(event.target.dataset)
+  //   let { show } = event.target.dataset
+  //   if (show === true) {
+  //     this.setData({
+  //       flag: false
+  //     })
+
+  //   } else {
+  //     this.setData({
+  //       flag: true
+  //     })
+
+  //   }
+  // },
   home() {
     wx.navigateTo({
       url: "/pages/project2/project2"
@@ -51,10 +60,11 @@ Page({
     wx.request({
       url: 'https://www.easy-mock.com/mock/5ceb9351d910de59a72e0ba7/example/classify',
       success:(res)=>{
-        console.log(res.data[0].Content)
+        console.log(res.data)
         this.setData({
           Subjects: res.data,
           one: res.data[0].Content
+          // id:res.data.id
         })
         
         
